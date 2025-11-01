@@ -17,8 +17,8 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
 # Get catalog and schema from pipeline configuration
-catalog_name = spark.conf.get("catalog") or "dev_customer_segmentation"
-schema_name = spark.conf.get("schema") or "segmentation"
+catalog_name = spark.conf.get("catalog") or "juan_dev"
+schema_name = spark.conf.get("schema") or "ml"
 
 # COMMAND ----------
 

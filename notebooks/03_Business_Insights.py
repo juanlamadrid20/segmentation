@@ -30,10 +30,10 @@ print("Loading customer segmentation insights...")
 # Get catalog and schema from job parameters
 catalog_name = (dbutils.widgets.get("catalog_name") 
                 if "catalog_name" in dbutils.widgets.getAll() 
-                else "dev_customer_segmentation")
+                else "juan_dev")
 schema_name = (dbutils.widgets.get("schema_name") 
                if "schema_name" in dbutils.widgets.getAll() 
-               else "segmentation")
+               else "ml")
 
 print(f"Using catalog: {catalog_name}, schema: {schema_name}")
 

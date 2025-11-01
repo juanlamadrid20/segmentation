@@ -33,8 +33,8 @@ user = w.current_user.me().user_name
 # COMMAND ----------
 
 # Get parameters from job
-catalog_name = dbutils.widgets.get("catalog_name") if "catalog_name" in dbutils.widgets.getAll() else "dev_customer_segmentation"
-schema_name = dbutils.widgets.get("schema_name") if "schema_name" in dbutils.widgets.getAll() else "segmentation"
+catalog_name = dbutils.widgets.get("catalog_name") if "catalog_name" in dbutils.widgets.getAll() else "juan_dev"
+schema_name = dbutils.widgets.get("schema_name") if "schema_name" in dbutils.widgets.getAll() else "ml"
 
 # COMMAND ----------
 
@@ -161,7 +161,7 @@ display(rfm_df)
 # COMMAND ----------
 
 # Retrieve the experiment ID, then view MLflow metadata
-expId = mlflow.get_experiment_by_name(f"/Users/{user}/.databricks/bundles/customer-segmentation/files/notebooks/02b_Segmentation_MLflow").experiment_id
+expId = mlflow.get_experiment_by_name(f"/Users/{user}/ml/customer-segmentation/files/notebooks/02b_Segmentation_MLflow").experiment_id
 experiment = mlflow.get_experiment(expId)
 
 print(f"Experiment_id: {expId}")

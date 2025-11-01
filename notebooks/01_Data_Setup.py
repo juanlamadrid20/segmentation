@@ -33,8 +33,8 @@ from databricks.sdk.service import pipelines
 w = WorkspaceClient()
 
 # Get parameters from job
-catalog_name = dbutils.widgets.get("catalog_name") if "catalog_name" in dbutils.widgets.getAll() else "dev_customer_segmentation"
-schema_name = dbutils.widgets.get("schema_name") if "schema_name" in dbutils.widgets.getAll() else "segmentation"
+catalog_name = dbutils.widgets.get("catalog_name") if "catalog_name" in dbutils.widgets.getAll() else "juan_dev"
+schema_name = dbutils.widgets.get("schema_name") if "schema_name" in dbutils.widgets.getAll() else "ml"
 
 # Configuration - Start small for testing
 NUM_CUSTOMERS = 1000

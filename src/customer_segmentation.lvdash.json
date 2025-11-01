@@ -8,8 +8,8 @@
         "    *\n",
         "FROM customer_segments;"
       ],
-      "catalog": "dev_customer_segmentation",
-      "schema": "segmentation"
+      "catalog": "juan_dev",
+      "schema": "ml"
     },
     {
       "name": "fe1d0538",
@@ -24,8 +24,8 @@
         "SELECT 'Total', count(*) FROM customer_segments\n",
         "ORDER BY cluster_count DESC"
       ],
-      "catalog": "dev_customer_segmentation",
-      "schema": "segmentation"
+      "catalog": "juan_dev",
+      "schema": "ml"
     },
     {
       "name": "db74f545",
@@ -33,8 +33,8 @@
       "queryLines": [
         "SELECT *, 'US' as country FROM customer_summary"
       ],
-      "catalog": "dev_customer_segmentation",
-      "schema": "segmentation"
+      "catalog": "juan_dev",
+      "schema": "ml"
     }
   ],
   "pages": [
@@ -2226,6 +2226,9 @@
   "uiSettings": {
     "theme": {
       "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "genieSpace": {
+      "isEnabled": false
     }
   }
 }
